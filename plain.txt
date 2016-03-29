@@ -1,0 +1,4 @@
+encrypt AES/CTR/NoPadding 2011-12-03T10:15:30+02:00 0 test.txt decrypt2.txt
+decrypt AES/CTR/NoPadding 2011-12-03T10:15:30+02:00 0 decrypt2.txt plain.txt
+AES/CTR/NoPadding 2011-12-03T04:15:30+02:00 decrypt2.txt
+AES/CTR/NoPadding 2013-04-05T05:00:33+02:00 output-1.bin
