@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: t413564
-Build-Jdk: 1.8.0_31
+Built-By: oli
+Build-Jdk: 1.8.0_66-internal
 Created-By: Maven Integration for Eclipse
 

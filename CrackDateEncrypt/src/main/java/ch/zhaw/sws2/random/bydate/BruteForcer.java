@@ -69,7 +69,8 @@ public class BruteForcer {
 	}
 
 	public void run(byte[] encryptedData) throws BadPaddingException {
-		long[][] zoneOffset = { { 6, 0 }, { 7, 30 }, { 8, 0 }, { 8, 30 }, { 9, 0 } };
+		//long[][] zoneOffset = { { 6, 0 }, { 7, 30 }, { 8, 0 }, { 8, 30 }, { 9, 0 } };
+		long[][] zoneOffset = { { 9, 30 } };
 		usecOffset = 0;
 		boolean cont = true;
 		for (long[] offset : zoneOffset) {

@@ -90,7 +90,7 @@ public class Crack {
       throws IOException, NoSuchPaddingException, NoSuchAlgorithmException {
 	  
 	  if (cipherSpec.contains("CBC") || cipherSpec.contains("CTR") || cipherSpec.contains("GCM")){
-			is.skip(128);
+			is.skip(16);
 	  }
   }
 
@@ -115,7 +115,7 @@ public class Crack {
     
     /* TODO: Instantiate and configure one or multiple 
      *        BruteForcer Objects  */
-    for (long second = -5; second < 5; second++) {
+    for (long second = -2; second < 2; second++) {
     	ZonedDateTime date = ZonedDateTime.parse(dateString).plusSeconds(second);
 		BruteForcer bruteF = new BruteForcer(date, cipherSpec); 
 		bruteforcer.add(bruteF);
